@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="password-validation">
+        <div class="main-box">
+            <h1>Password Validation</h1>
+        <div class="password-validation">
+            <input type="password" placeholder="Enter Your Password" id="password" oninput="check (this.value)">
+            <i id="see" onclick="see()" class="fa-solid fa-eye"></i>
+        </div>
+        <div class="password-checked" >
+            
+            <p id="count"></p>
+        </div>
+        <div class="password-checked">
+
+            <i class="fas fa-check" id="fa-check"></i>
+            <p id="count1" > Passowrd Lenght more than 5</p>
+        </div>
+        <div class="password-checked" >
+            <i id="fa-check2" class="fas fa-check"></i>
+            <p id="count2">Passowrd Lenght lesthan than 15</p>
+        </div>
+        <div class="password-checked">
+            <i  class="fas fa-check" id="fa-check3" ></i>
+            <p id="count3">A password should be alphanumeric.</p>
+        </div>
+        <div class="password-checked">
+            <i class="fas fa-check" id="fa-check4"></i>
+            <p id="count4">First letter of the password should be capital.</p>
+        </div>
+        <div class="password-checked">
+            <i class="fas fa-check" id="fa-check5"></i>
+            <p id="count5">Password must contain a special character (@, $, !, &, etc).</p>
+        </div>
+       
+        <div class="password-checked">
+            <i class="fas fa-check" id="fa-check6"></i>
+            <p id="count6">password fields should not be empty.</p>
+        </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
